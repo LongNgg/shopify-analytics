@@ -1,0 +1,32 @@
+[
+    {
+        "date": "2023-12-01",
+        "clicks": 120,
+        "revenue": 300,
+        "conversionRate": 5
+    },
+    {
+        "date": "2023-12-02",
+        "clicks": 150,
+        "revenue": 400,
+        "conversionRate": 6.67
+    },
+    {
+        "date": "2023-12-03",
+        "clicks": 100,
+        "revenue": 250,
+        "conversionRate": 5.5
+    },
+    {
+        "date": "2023-12-04",
+        "clicks": 180,
+        "revenue": 500,
+        "conversionRate": 7.8
+    },
+    {
+        "date": "2023-12-05",
+        "clicks": 130,
+        "revenue": 350,
+        "conversionRate": 6.5
+    }
+]
