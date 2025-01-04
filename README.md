@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Shopify Upsell Analytics Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based analytics dashboard for visualizing Shopify upsell performance metrics. The dashboard provides real-time insights into clicks, revenue, and conversion rates through an interactive interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+-   **Interactive Date Range Filter**: Easily analyze data for specific time periods
+-   **Key Performance Metrics**:
+    -   Total Clicks
+    -   Total Revenue
+    -   Average Conversion Rate
+-   **Visual Data Representation**:
+    -   Multi-axis line chart showing trends
+    -   Color-coded metrics for easy differentiation
+    -   Interactive tooltips with formatted values
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   React
+-   TypeScript
+-   Recharts for data visualization
+-   Modern CSS for styling
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. Clone the repository
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Start the development server:
+    ```bash
+    npm start
+    ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Data Format
 
-### `npm run build`
+The application expects data in the following JSON format:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+  "date": "YYYY-MM-DD",
+  "clicks": number,
+  "revenue": number,
+  "conversionRate": number
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Customization
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   Color scheme can be modified in the `chartColors` object
+-   Date format can be adjusted in the `formatDate` function
+-   Chart dimensions and styling can be modified through the Recharts components
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Feel free to submit issues and pull requests for additional features or improvements.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT License

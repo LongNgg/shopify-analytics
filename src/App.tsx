@@ -22,10 +22,10 @@ interface DataPoint {
 
 function App() {
     // State management for data and UI controls
-    const [data, setData] = useState<DataPoint[]>([]); // Stores the analytics data
-    const [loading, setLoading] = useState(true); // Controls loading state
-    const [startDate, setStartDate] = useState("2023-12-01"); // Filter start date
-    const [endDate, setEndDate] = useState("2023-12-05"); // Filter end date
+    const [data, setData] = useState<DataPoint[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [startDate, setStartDate] = useState("2023-12-01");
+    const [endDate, setEndDate] = useState("2023-12-05");
 
     // Load data from JSON file when component mounts
     useEffect(() => {
@@ -80,9 +80,9 @@ function App() {
 
     // Define color scheme for different metrics in the chart
     const chartColors = {
-        clicks: "#10b981", // emerald-500
-        revenue: "#ec4899", // pink-500
-        conversion: "#f59e0b", // amber-500
+        clicks: "#10b981",
+        revenue: "#ec4899",
+        conversion: "#f59e0b",
     };
 
     // Show loading state while data is being fetched
@@ -152,7 +152,7 @@ function App() {
                             orientation="right"
                             stroke="#64748b"
                         />
-                        {/* Tooltip configuration for better data readability */}
+                        {/* Tooltip configuration */}
                         <Tooltip
                             formatter={(value, name) => {
                                 if (name === "conversionRate")
@@ -174,7 +174,7 @@ function App() {
                                 paddingTop: "1rem",
                             }}
                         />
-                        {/* Individual line configurations for each metric */}
+                        {/* Individual line configurations */}
                         <Line
                             yAxisId="left"
                             type="monotone"
